@@ -57,6 +57,31 @@ class _MenuPageState extends State<MenuPage> {
       description:
           'Bento is a traditional Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanying a variety of ingredients, such as seafood, often raw, and vegetables. Styles of sushi and its presentation vary widely, but the one key ingredient is "sushi rice", also referred to as shari, or sumeshi.',
     ),
+    // suggest other foods
+    Food(
+      name: 'Salmon Sushi',
+      price: '21.00',
+      imagePath: 'lib/images/salmon_sushi.png',
+      rating: '4.9',
+      description:
+          'Sushi is a traditional Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanying a variety of ingredients, such as seafood, often raw, and vegetables. Styles of sushi and its presentation vary widely, but the one key ingredient is "sushi rice", also referred to as shari, or sumeshi.',
+    ),
+    Food(
+      name: 'Tuna',
+      price: '23.00',
+      imagePath: 'lib/images/tuna.png',
+      rating: '4.3',
+      description:
+          'Sushi Tuna is a traditional Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanying a variety of ingredients, such as seafood, often raw, and vegetables. Styles of sushi and its presentation vary widely, but the one key ingredient is "sushi rice", also referred to as shari, or sumeshi.',
+    ),
+    Food(
+      name: 'Ramen',
+      price: '30.00',
+      imagePath: 'lib/images/ramen.png',
+      rating: '5.0',
+      description:
+          'Ramen is a traditional Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanying a variety of ingredients, such as seafood, often raw, and vegetables. Styles of sushi and its presentation vary widely, but the one key ingredient is "sushi rice", also referred to as shari, or sumeshi.',
+    ),
   ];
 
   void navigateToFoodDetails(int index) {
@@ -110,7 +135,7 @@ class _MenuPageState extends State<MenuPage> {
                     GestureDetector(
                       child: MyButton(text: 'Redeem Now'),
                       onTap: () {
-                        Navigator.pushNamed(context, '/intro');
+                        Navigator.pushNamed(context, '/redeem');
                       },
                     ),
                   ],
